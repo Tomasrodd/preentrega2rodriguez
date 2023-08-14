@@ -83,7 +83,6 @@ width: 60px;
 
 .secciones-boton {
     background-color:#DFD4C8;
-    border: ;
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
@@ -141,8 +140,253 @@ grid-template-columns: 333px 333px 333px
 .grid-conunteinter > div{
     display: block;
     border: 1px solid black; 
-    padding: 50px;
+    padding: px;
 }
 
 
 
+/*BUZOS*/
+
+/*MENU DE BUZOS*/
+.nav-main-buzos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+}
+
+.nav-main-buzos ul{
+    display: flex;
+}
+
+.nav-main-buzos li{
+    padding: 10px;
+}
+
+.nav-main-buzos ul.nav-menu-buzos {
+    flex: 1;
+    margin-left: 100px;
+    list-style: none;
+
+}
+
+.nav-main-buzos ul li a:hover{
+    border-bottom: 2px solid black;
+}
+
+.nav-logo-buzos{
+width: 60px;}
+
+/*COMPRA DE BUZOS CSS GRID*/
+
+.secciones-img-buzos{
+    width: 333px;
+    height: 333px;
+}
+.grid-conunteinter-buzos{
+    /*box modeling*/
+width: 90%;
+max-width: 1019px;
+
+margin: auto;
+
+/*tipografia*/
+text-align: center;
+font-size: 25px;
+
+/* activo grid*/
+display: grid;
+grid-template-columns: 333px 333px 333px
+
+
+}
+
+.grid-conunteinter-buzos > div{
+    display: block;
+    padding: 5px;}
+
+
+/*PIE DE PAGINA*/
+
+.pie-buzos{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-block: 12px;
+    align-items: center;
+
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 480px)
+{
+    /*MEDIA PORTADA*/
+    .portada{
+        width: 100%;
+        height: 350px;
+        background: no-repeat center center/cover;
+        margin-bottom: 50px;
+    }
+    
+    /*MEDIA NAV*/
+
+    .nav-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .nav-main ul{
+        display: flex;
+    }
+    
+    .nav-main ul li{
+        padding: 10px;
+    }
+    
+    .nav-main ul.nav-menu {
+        flex: 1;
+        margin-left: 100px;
+        list-style: none;
+    
+    }
+    
+    .nav-main ul li a:hover{
+        border-bottom: 1px solid black;
+    }
+    
+    .nav-logo{
+    width: 40px;
+    }
+
+    /*MEDIA SECCIONES*/
+
+    .grid-conunteinter{
+        /*box modeling*/
+    width: 90%;
+    max-width: 1019px;
+    margin: auto;
+    gap: 10px;
+    
+    /*tipografia*/
+    text-align: center;
+    font-size: 20px;
+    
+    /* activo grid*/
+    display: grid;
+    grid-template-columns: 415px 
+    
+    
+    }
+    
+    .grid-conunteinter > div{
+        display: block; 
+    }
+
+
+    /*PIE*/
+
+    .pie{
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        padding-block: 12px;
+        align-items: center;
+        font-size: 10px;
+    
+    }
+    
+    .logo{
+        width: 20px;
+        flex-direction: row-reverse;
+    }
+
+
+
+/*MEDIA QUERIES BUZOS*/
+    
+.nav-main-buzos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+    font-size: 9px;
+}
+
+.nav-main-buzos ul{
+    display: flex;
+}
+
+.nav-main-buzos ul li{
+    padding: 10px;
+}
+
+.nav-main-buzos ul.nav-menu-buzos {
+    flex: 1;
+    margin-left: 100px;
+    list-style: none;
+
+}
+
+.nav-main-buzos ul li a:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-logo-buzos{
+width: 40px;
+}
+
+
+    /*MEDIA SECCIONES BUZOS*/
+
+    .grid-conunteinter-buzos{
+        /*box modeling*/
+    width: 90%;
+    max-width: 1019px;
+    margin: auto;
+    gap: 10px;
+    
+    /*tipografia*/
+    text-align: center;
+    font-size: 20px;
+    
+    /* activo grid*/
+    display: grid;
+    grid-template-columns: 415px 
+    
+    
+    }
+    
+    .grid-conunteinter-buzos > div{
+        display: block; 
+    }
+
+    .pie-buzos{
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        padding-block: 12px;
+        align-items: center;
+        font-size: 10px;
+    
+    }
+    
+    .logo-buzos{
+        width: 20px;
+        flex-direction: row-reverse;
+    }
+
+}
