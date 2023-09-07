@@ -37,7 +37,7 @@
 @media screen and (max-width: 480px) {
   /*NAVEGACION*/
   .nav-main {
-    font-size: 13px;
+    font-size: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -49,9 +49,9 @@
     margin-top: 30px;
   }
   .nav-brand {
-    width: 50px;
+    width: 35px;
     margin-top: 20px;
-    margin-left: 0px;
+    margin-left: 20px;
   }
   .nav-main ul {
     display: flex;
@@ -227,7 +227,7 @@
 @media screen and (max-width: 480px) {
   /*PRODUCTOS*/
   .producto-content {
-    margin: 50px 50px;
+    margin: 50px 30px;
     display: grid;
     grid-template-columns: 100%;
     gap: 10px;
