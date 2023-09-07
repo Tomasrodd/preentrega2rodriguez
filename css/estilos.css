@@ -1,392 +1,548 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
+/*COLORES*/
+/*FUENTES*/
+/* NAVEGACION */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.nav-main ul {
+  display: flex;
+}
+.nav-main ul li {
+  padding: 10px;
+}
+.nav-main ul li a {
+  padding: 10px;
+}
+.nav-main ul li a:hover {
+  border-bottom: 2px solid black;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
-
-
-.nav-main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 20px;
-}
-
-.nav-main ul{
-    display: flex;
-}
-
-.nav-main ul li{
-    padding: 10px;
+.nav-brand {
+  width: 60px;
 }
 
 .nav-main ul.nav-menu {
-    flex: 1;
-    margin-left: 100px;
-    list-style: none;
-
+  flex: 1;
+  margin-left: 100px;
+  list-style: none;
 }
 
-.nav-main ul li a:hover{
-    border-bottom: 2px solid black;
-}
-
-.nav-logo{
-width: 60px;
-
-}
-
-.portada{
-    width: 100%;
-    height: 700px;
-    background: no-repeat center center/cover;
-    margin-bottom: 50px;
-}
-
-.titulo{
-    display: inline-block;
+@media screen and (max-width: 480px) {
+  /*NAVEGACION*/
+  .nav-main {
+    font-size: 13px;
     display: flex;
-    justify-content: center;
-    font-size: 40px;
-
-}
-
-.secciones{
-    margin-top: 300px;
-    width: 18%;
-    padding: 30px;
-    display:inline-block;
-    margin-inline: 5%;
-    margin-block: 10px;
-}
-
-.secciones-img{
-    width: 200px;
-    height: 200PX;
-    border-radius: 30px;
-    
-}
-
-.secciones-desc{
-    font-size: 25px;
-    font-weight: 500;
-    justify-content: center;
-}
-
-.secciones-boton {
-    background-color:#DFD4C8;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .fas {
+    margin-top: 30px;
+  }
+  .nav-brand {
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .nav-main ul {
+    display: flex;
+  }
+  .nav-main ul li {
+    padding: 2px;
+  }
+  .nav-main ul li a {
     padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-    
-}
-
-.pie{
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    padding-block: 12px;
-    align-items: center;
-
-}
-
-.logo{
-    width: 30px;
-    flex-direction: row-reverse;
-    
-}
-
-.secciones-desc1{
-    display: flex;
-}
-
-/*Css grid*/
-.main-acesorios{
-display:flex;
-justify-content: space-between;
-width: 100px;
-height: 100px;
-}
-
-
-.grid-conunteinter{
-    /*box modeling*/
-width: 90%;
-max-width: 1019px;
-border: 10px solid black;
-margin: auto;
-
-/*tipografia*/
-text-align: center;
-font-size: 50px;
-
-/* activo grid*/
-display: grid;
-grid-template-columns: 333px 333px 333px
-
-
-}
-
-.grid-conunteinter > div{
-    display: block;
-    border: 1px solid black; 
-    padding: px;
-}
-
-
-
-/*BUZOS*/
-
-/*MENU DE BUZOS*/
-.nav-main-buzos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 20px;
-}
-
-.nav-main-buzos ul{
-    display: flex;
-}
-
-.nav-main-buzos li{
-    padding: 10px;
-}
-
-.nav-main-buzos ul.nav-menu-buzos {
-    flex: 1;
-    margin-left: 100px;
-    list-style: none;
-
-}
-
-.nav-main-buzos ul li a:hover{
+  }
+  .nav-main ul li a:hover {
     border-bottom: 2px solid black;
-}
-
-.nav-logo-buzos{
-width: 60px;}
-
-/*COMPRA DE BUZOS CSS GRID*/
-
-.secciones-img-buzos{
-    width: 333px;
-    height: 333px;
-}
-.grid-conunteinter-buzos{
-    /*box modeling*/
-width: 90%;
-max-width: 1019px;
-
-margin: auto;
-
-/*tipografia*/
-text-align: center;
-font-size: 25px;
-
-/* activo grid*/
-display: grid;
-grid-template-columns: 333px 333px 333px
-
-
-}
-
-.grid-conunteinter-buzos > div{
-    display: block;
-    padding: 5px;}
-
-
-/*PIE DE PAGINA*/
-
-.pie-buzos{
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    padding-block: 12px;
-    align-items: center;
-
-}
-
-
-/*media queries*/
-
-@media screen and (max-width: 480px)
-{
-    /*MEDIA PORTADA*/
-    .portada{
-        width: 100%;
-        height: 350px;
-        background: no-repeat center center/cover;
-        margin-bottom: 50px;
-    }
-    
-    /*MEDIA NAV*/
-
-    .nav-main{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 40px;
-        padding: 10px;
-        font-size: 12px;
-    }
-    
-    .nav-main ul{
-        display: flex;
-    }
-    
-    .nav-main ul li{
-        padding: 10px;
-    }
-    
-    .nav-main ul.nav-menu {
-        flex: 1;
-        margin-left: 100px;
-        list-style: none;
-    
-    }
-    
-    .nav-main ul li a:hover{
-        border-bottom: 1px solid black;
-    }
-    
-    .nav-logo{
-    width: 40px;
-    }
-
-    /*MEDIA SECCIONES*/
-
-    .grid-conunteinter{
-        /*box modeling*/
-    width: 90%;
-    max-width: 1019px;
-    margin: auto;
-    gap: 10px;
-    
-    /*tipografia*/
-    text-align: center;
-    font-size: 20px;
-    
-    /* activo grid*/
-    display: grid;
-    grid-template-columns: 415px 
-    
-    
-    }
-    
-    .grid-conunteinter > div{
-        display: block; 
-    }
-
-
-    /*PIE*/
-
-    .pie{
-        background-color: white;
-        color: black;
-        display: flex;
-        justify-content: space-between;
-        padding: 15px;
-        padding-block: 12px;
-        align-items: center;
-        font-size: 10px;
-    
-    }
-    
-    .logo{
-        width: 20px;
-        flex-direction: row-reverse;
-    }
-
-
-
-/*MEDIA QUERIES BUZOS*/
-    
-.nav-main-buzos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    padding: 10px;
-    font-size: 9px;
-}
-
-.nav-main-buzos ul{
-    display: flex;
-}
-
-.nav-main-buzos ul li{
-    padding: 10px;
-}
-
-.nav-main-buzos ul.nav-menu-buzos {
+  }
+  .nav-main ul.nav-menu {
     flex: 1;
-    margin-left: 100px;
+    margin-left: 10px;
     list-style: none;
-
+    margin-top: 30px;
+  }
+}
+/*COLORES*/
+/*FUENTES*/
+/*SECCIONES*/
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  margin: 25px;
+  font-family: "Oswald", sans-serif;
 }
 
-.nav-main-buzos ul li a:hover{
-    border-bottom: 1px solid black;
+.grid-conteiner {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+  /*tipografia*/
+  text-align: center;
+  /*ACTIVO GRID*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-conteiner .productos {
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.grid-conteiner .secciones-img {
+  width: 350px;
+  height: 400px;
+  margin-top: 20px;
+}
+.grid-conteiner .btn-compra-home {
+  background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+  margin: 10px;
+  padding: 10px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: block;
+}
+.grid-conteiner .btn-compra-home:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
-.nav-logo-buzos{
-width: 40px;
-}
-
-
-    /*MEDIA SECCIONES BUZOS*/
-
-    .grid-conunteinter-buzos{
-        /*box modeling*/
+@media screen and (max-width: 480px) {
+  /*TITULO*/
+  .titulo {
+    font-size: 50PX;
+    display: block;
+    text-align: center;
+    color: #000;
+    margin: 25px;
+    font-family: "Oswald", sans-serif;
+  }
+  /*SECCIONES*/
+  .grid-conteiner {
     width: 90%;
-    max-width: 1019px;
+    max-width: 500px;
     margin: auto;
-    gap: 10px;
-    
     /*tipografia*/
     text-align: center;
-    font-size: 20px;
-    
-    /* activo grid*/
+    /*ACTIVO GRID*/
     display: grid;
-    grid-template-columns: 415px 
-    
-    
-    }
-    
-    .grid-conunteinter-buzos > div{
-        display: block; 
-    }
-
-    .pie-buzos{
-        background-color: white;
-        color: black;
-        display: flex;
-        justify-content: space-between;
-        padding: 15px;
-        padding-block: 12px;
-        align-items: center;
-        font-size: 10px;
-    
-    }
-    
-    .logo-buzos{
-        width: 20px;
-        flex-direction: row-reverse;
-    }
-
+    grid-template-columns: 100%;
+  }
+  .productos {
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .secciones-img {
+    width: 200px;
+    height: 239px;
+    margin-top: 20px;
+  }
+  .btn-compra-home {
+    margin-bottom: 50px;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 3px;
+    font-size: 20px;
+  }
+  .btn-compra-home {
+    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+    margin: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+  .btn-compra-home:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
 }
+/*COLORES*/
+/*FUENTES*/
+/*PRODUCTOS*/
+.producto-content {
+  max-width: 1200px;
+  margin: 50px 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+.producto-content .producto {
+  padding: 50px 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.producto-content .producto .imagen-producto {
+  width: 400px;
+  height: 470px;
+}
+.producto-content .producto .descripcion {
+  font-size: 20px;
+  color: black;
+}
+.producto-content .producto .precio {
+  color: black;
+  font-size: 15px;
+}
+.producto-content .producto .btn-compra {
+  display: inline-block;
+  padding: 11px 25px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.producto-content .producto .btn-compra:hover {
+  transition: all 400ms ease;
+  background-color: #444441;
+}
+
+@media screen and (max-width: 480px) {
+  /*PRODUCTOS*/
+  .producto-content {
+    margin: 50px 50px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+  }
+  .imagen-producto {
+    width: 350px;
+    height: 470px;
+  }
+}
+/*COLORES*/
+/*FUENTES*/
+/*FORMULARIO*/
+.container-form {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+}
+.container-form h2 {
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+.container-form p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.container-form a {
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: 700;
+}
+.container-form a i {
+  color: black;
+  margin-right: 10px;
+}
+.container-form form .campo textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.container-form form textarea {
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+.container-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: black;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover {
+  background: gray;
+}
+
+.info-form {
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  /* FORMULARIO */
+  .container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 50px;
+    margin-top: 90px;
+  }
+  .container-form h2 {
+    margin-bottom: 15px;
+    font-size: 70px;
+    text-align: center;
+  }
+  .container-form p {
+    font-size: 17px;
+    line-height: 2;
+    margin-bottom: 30px;
+    margin: 30px;
+  }
+  .container-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+  }
+  .container-form a i {
+    color: black;
+    margin-right: 10px;
+  }
+  .container-form form .campo, textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+  }
+  .container-form form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+  }
+  .container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+  .container-form .btn-enviar:hover {
+    background: gray;
+  }
+  .info-form {
+    color: black;
+  }
+}
+/*COLORES*/
+/*FUENTES*/
+/*FOOTER*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*Pie de Pagina*/
+.pie-pagina {
+  width: 100%;
+  background-color: #CBCBCB;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 250px;
+  padding: 20px 0px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #1D1A1A;
+  margin-bottom: 5px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 80px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #000000;
+  margin-right: 10px;
+  background-color: #9A9A9A;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: #CBCBCB;
+}
+.pie-pagina .grupo-2 {
+  background-color: #9A9A9A;
+  padding: 15px 10px;
+  text-align: center;
+  color: #000000;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  /* PIE DE PAGINA / FOOTER */
+  .pie-pagina {
+    width: 100%;
+    background-color: #CBCBCB;
+  }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
+    padding: 20px 0px;
+  }
+  .pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure img {
+    width: 80px;
+  }
+  .pie-pagina .grupo-1 .box h2 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .pie-pagina .grupo-1 .box p {
+    color: #1D1A1A;
+    margin-bottom: 5px;
+  }
+  .pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #000000;
+    margin-right: 10px;
+    background-color: #9A9A9A;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .pie-pagina .grupo-1 .red-social a:hover {
+    color: #CBCBCB;
+  }
+  .pie-pagina .grupo-2 {
+    background-color: #9A9A9A;
+    padding: 15px 10px;
+    text-align: center;
+    color: #000000;
+  }
+  .pie-pagina .grupo-2 small {
+    font-size: 15px;
+  }
+  .red-social {
+    padding-right: 10px;
+  }
+}
+/*COLORES*/
+/*FUENTES*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+  background-color: white;
+  color: #1e272e;
+  color: #fff;
+  font-size: 16px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.portada {
+  width: 1910px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 480px) {
+  /*PORTADA*/
+  .portada {
+    width: 480px;
+    height: 400px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

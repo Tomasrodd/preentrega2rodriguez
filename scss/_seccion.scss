@@ -1,0 +1,130 @@
+@import "variables";
+
+/*SECCIONES*/
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    margin: 25px;
+    font-family: "Oswald", sans-serif;
+}
+
+.grid-conteiner{
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+
+    /*tipografia*/
+    text-align: center;
+
+    /*ACTIVO GRID*/
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+
+    & .productos{
+        margin: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+
+    & .secciones-img{
+            width: 350px;
+            height: 400px;
+            margin-top: 20px;
+        }
+    &  .btn-compra-home {
+        background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
+        margin: 10px;
+        padding: 10px 10px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        display: block;
+        &:hover{
+            background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+            }
+}
+}
+@media screen and (max-width:480px){
+    /*TITULO*/
+
+    .titulo{
+        font-size: 50PX;
+        display: block;
+        text-align: center;
+        color: #000;
+        margin: 25px;
+        font-family: "Oswald", sans-serif;
+    }
+    /*SECCIONES*/
+
+.grid-conteiner{
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+
+    /*tipografia*/
+    text-align: center;
+
+    /*ACTIVO GRID*/
+    display: grid;
+    grid-template-columns:100%;
+}
+
+.productos{
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.secciones-img{
+    width: 200px;
+    height: 239px;
+    margin-top: 20px;
+}
+
+.btn-compra-home{
+    margin-bottom: 50px;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+
+    .btn-compra-home {
+        background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
+        margin: 10px;
+        padding: 10px 10px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .btn-compra-home:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+    }
+    
+}
+
